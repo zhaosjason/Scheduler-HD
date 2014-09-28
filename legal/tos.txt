@@ -1,0 +1,37 @@
+TERMS OF SERVICE
+
+These Terms of Service ("Terms") govern your access to and use of Scheduler HD services including our applications, email systems, information, text, graphics, photos, or other materials appearing on the Services (collectively referred to as "Content"). Your access to and use of the Services are conditioned on your acceptance of and compliance with these Terms. By accessing or using the Services in any manner you agree to be bound by the Terms.
+
+I. Content
+
+You are responsible for your use of the Services, for any Content you post to the Services, and for any consequences thereof. You should only provide Content that you are comfortable sharing with others under these Terms. Our services may change without prior notice to users. Scheduler HD may stop (permanently or temporarily) providing the Services (or any features within the Services) to you or to users and may not provide you with prior notice.
+
+Scheduler HD Entities make no warranty and disclaim all responsibility and liability for: (i) the completeness, accuracy, availability, timeliness, security or reliability of the Services or any Content; (ii) any harm to your computer system, loss of data, or other harm that results from your access to or use of the Services or any Content; (iii) the deletion of, or the failure to store or to transmit, any Content and other communications maintained by the Services; and (iv) whether the Services will meet your requirements or be available on an uninterrupted, secure, or error-free basis. No advice or information, whether oral or written, obtained from the Scheduler HD Entities or through the Services, will create any warranty not expressly made herein.
+
+Scheduler HD maintains the right to remove any and all material from the Services that detracts from the goals and motives of Scheduler HD. This material includes but is not restricted to usernames, schedule data, and other personal user information.
+
+You retain your rights to any Content you submit, post or display on or through the Services. By submitting, posting or displaying Content on or through the Services, you grant us a worldwide, non-exclusive, royalty-free license (with the right to sublicense) to use, copy, reproduce, process, adapt, modify, publish, transmit, display and distribute such Content in any and all media or distribution methods (now known or later developed).
+
+II. Use of the Services
+
+You may not do any of the following while accessing or using the Services: (i) access, tamper with, or use non-public areas of the Services, Scheduler HD's computer systems, or the technical delivery systems of Scheduler HD's providers; (ii) probe, scan, or test the vulnerability of any system or network or breach or circumvent any security or authentication measures; (iii) access or search or attempt to access or search the Services by any means (automated or otherwise) other than through our currently available, published interfaces that are provided by Scheduler HD (and only pursuant to those terms and conditions), unless you have been specifically allowed to do so in a separate agreement with Scheduler HD; (iv) forge any TCP/IP packet header or any part of the header information in any email or posting, or in any way use the Services to send altered, deceptive or false source-identifying information; or (v) interfere with, or disrupt, (or attempt to do so), the access of any user, host or network, including, without limitation, sending a virus, overloading, flooding, spamming, mail-bombing the Services, or by scripting the creation of Content in such a manner as to interfere with or create an undue burden on the Services.
+
+III. Privacy
+
+As part of providing you the Services, we may need to provide you with certain communications, such as administrative messages. These communications are considered part of the Services and your Scheduler HD account, which you may not be able to opt-out from receiving.
+
+IV. Passwords
+
+You are responsible for safeguarding the password that you use to access the Services and for any activities or actions under your password. Scheduler HD and its entities cannot and will not be liable for any loss or damage arising from your failure to comply with the above.
+
+V. Copyright Policy
+
+We reserve the right to remove Content alleged to be infringing without prior notice, at our sole discretion, and without liability to you. In appropriate circumstances, Scheduler HD will also terminate a user's account if the user is determined to be a repeat infringer.
+
+These Services are operated by Scheduler HD staff in Indianapolis, Indiana. For more information, please contact us using our Contact Page through our website.
+
+VI. Intent of Use
+
+These Services are provided for scholarly use only. Scheduler HD maintains the right to delete all Content associated with a user who uses our Services to prove that he or she should be allowed to change his or her schedule. This type of use is against the goals of Scheduler HD and causes unnecessary trouble for school administration.
+
+Effective August 1, 2013

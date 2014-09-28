@@ -1,0 +1,1411 @@
+﻿/*
+ .oooooo..o           oooo                        .o8              oooo                          ooooo   ooooo oooooooooo.   
+d8P'    `Y8           `888                       "888              `888                          `888'   `888' `888'   `Y8b  
+Y88bo.       .ooooo.   888 .oo.    .ooooo.   .oooo888  oooo  oooo   888   .ooooo.  oooo d8b       888     888   888      888 
+ `"Y8888o.  d88' `"Y8  888P"Y88b  d88' `88b d88' `888  `888  `888   888  d88' `88b `888""8P       888ooooo888   888      888 
+     `"Y88b 888        888   888  888ooo888 888   888   888   888   888  888ooo888  888           888     888   888      888 
+oo     .d8P 888   .o8  888   888  888    .o 888   888   888   888   888  888    .o  888           888     888   888     d88' 
+8""88888P'  `Y8bod8P' o888o o888o `Y8bod8P' `Y8bod88P"  `V88V"V8P' o888o `Y8bod8P' d888b         o888o   o888o o888bood8P'   
+*/
+
+@font-face
+{
+    font-family: 'VegurBold';
+    src: url('fonts/vegur-bold-webfont.eot');
+    src: url('fonts/vegur-bold-webfont.eot?#iefix'), url('fonts/vegur-bold-webfont.woff'), url('fonts/vegur-bold-webfont.ttf'), url('fonts/vegur-bold-webfont.svg#VegurBold');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face
+{
+    font-family: 'VegurLight';
+    src: url('fonts/vegur-light-webfont.eot');
+    src: url('fonts/vegur-light-webfont.eot?#iefix'), url('fonts/vegur-light-webfont.woff'), url('fonts/vegur-light-webfont.ttf'), url('fonts/vegur-light-webfont.svg#VegurLight');
+    font-weight: normal;
+    font-style: normal;
+}
+
+::selection
+{
+    background: #DDD;
+}
+
+::-moz-selection
+{
+    background: #DDD;
+}
+
+#page-content ::-webkit-scrollbar
+{
+    width: 15px;
+}
+
+#page-content ::-webkit-scrollbar-track, #page-content ::-webkit-scrollbar-thumb
+{
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+}
+
+*
+{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'VegurLight';
+}
+
+#wrapper
+{
+    width: 100%;
+    padding-bottom: 125px;
+}
+
+/* ~ ~ ~ ~ Welcome Page ~ ~ ~ ~ */
+
+#welcome-body
+{
+    background-color: #222;
+    background: url("../images/welcome_background.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#welcome-content
+{
+    width: 70%;
+    margin: 0px auto;
+    min-width: 800px;
+}
+
+#welcome-about
+{
+    top: 240px;
+    width: 53%;
+    position: relative;
+    float: left;
+    padding: 10px 10px 15px 15px;
+    color: White;
+}
+
+#welcome-about-header
+{
+    margin-bottom: 15px;
+    font-size: 64px;
+    line-height: 1.0em;
+    text-shadow: 1px 1px #777;
+    font-family: 'VegurBold';
+}
+
+#welcome-about-text
+{
+    font-size: 15px;
+    line-height: 1.4em;
+    font-family: Arial;
+}
+
+#welcome-login
+{
+    top: 260px;
+    width: 300px;
+    position: relative;
+    float: right;
+    padding: 10px 15px 20px 15px;
+    background-color: rgba(255, 255, 255, 0.3);
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    color: White;
+    font-family: 'VegurLight';
+    font-size: 14px;
+}
+
+#welcome-login-header
+{
+    margin: 5px 0px 15px 10px;
+    font-size: 20px;
+    font-family: 'VegurBold';
+}
+
+#tbLoginUsername
+{
+    margin-bottom: 10px;
+}
+
+#linkSignUp
+{
+    display: inline-block;
+    margin: 20px 0px 0px 25px;
+    text-decoration: none;
+    font-size: 14px;
+    color: #DEDEDE;
+    font-family: Arial;
+    font-weight: bold;
+}
+
+#linkSignUp:hover
+{
+    color: #FFF;
+}
+
+.login-field
+{
+    margin: 0px auto;
+    display: block;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    border: 0px solid #000;
+    width: 280px;
+    height: 30px;
+    background: #EEE;
+    text-indent: 10px;
+    font-family: Arial;
+}
+
+.login-field:focus
+{
+    background: #FFF;
+    outline-color: #FFF;
+}
+
+#btnLogin
+{
+    margin: 15px 25px 0px 0px;
+    width: 140px;
+    height: 28px;
+    border: 0px solid #000;
+    background-color: #CCC;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    font-family: Arial;
+    font-weight: bold;
+    float: right;
+}
+
+#btnLogin:hover
+{
+    background-color: #BABABA;
+    border: 1px solid #888;
+}
+
+#copyright-text
+{
+    color: #444;
+    font-family: Arial;
+    font-size: 11px;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+}
+
+#copyright-text:hover
+{
+    color: #AAA;
+    cursor: pointer;
+}
+
+/* ~ ~ ~ ~ All Pages ~ ~ ~ ~ */
+
+#main-header-ribbon
+{
+    background-color: rgba(0, 0, 0, 0.7);
+    min-width: 800px;
+    width: 100%;
+    height: 60px;
+    position: absolute;
+}
+
+#main-header-text
+{
+    margin: 16px 0px 16px 30px;
+    font-family: 'VegurBold';
+    font-size: 28px;
+    color: White;
+}
+
+#main-header-title-link
+{
+    text-decoration: none;
+    display: inline-block;
+}
+
+#main-header-menu-div
+{
+    position: absolute;
+    top: 2px;
+    right: 15px;
+    width: 50px;
+    height: 65px;
+}
+
+#main-header-menu-div:hover
+{
+    cursor: default;
+}
+
+#main-header-menu-div:hover #main-menu
+{
+    visibility: visible;
+    opacity: 1;
+    transition-delay: 0s;
+}
+
+#main-header-menu-icon
+{
+    width: 30px;
+    height: 20px;
+    background-image: url("../images/menu_icon_small.png");
+    background-repeat: no-repeat;
+    background-size: 30px 20px;
+    position: absolute;
+    margin: 18px 8px;
+}
+
+#main-menu
+{
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s linear 0.2s, opacity 0.2s linear;
+    position: absolute;
+    top: 62px;
+    right: -10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border: 0px solid #666;
+    padding: 6px 25px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    z-index: 10;
+}
+
+#main-menu:hover
+{
+    cursor: default;
+}
+
+#main-menu:target
+{
+    cursor: default;
+}
+
+.main-menu-button
+{
+    margin: 5px 0px;
+    padding: 5px 0px;
+    color: White;
+    font-family: Arial;
+    font-weight: bold;
+    background-color: transparent;
+    border: 0px solid #000;
+}
+
+.main-menu-button:hover
+{
+    cursor: pointer;
+    color: #999;
+    text-shadow: 1px 1px #000;
+}
+
+#page-body
+{
+    background-color: #555;
+}
+
+#page-content
+{
+    width: 70%;
+    margin: 0px auto;
+    min-width: 800px;
+}
+
+/* ~ ~ ~ ~ Home Page ~ ~ ~ ~ */
+
+#home-page-body
+{
+    background: url("../images/gradient_background.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-color: #444;
+}
+
+#tbSearch
+{
+    width: 600px;
+    height: 40px;
+    font-family: 'VegurBold';
+    font-size: 25px;
+    margin: 0px auto;
+    margin-top: 280px;
+    background-color: #F8F8F8;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    border: 2px inset #888;
+    display: block;
+    text-align: center;
+}
+
+#tbSearch:focus
+{
+    background: #FFF;
+    outline-color: #FFF;
+    border: 2px solid #AAA;
+}
+
+#btnSearch
+{
+    position: absolute;
+    left: -9999px;
+    width: 1px;
+    height: 1px;
+}
+
+#searchText
+{
+    color: White;
+    font-family: 'VegurLight';
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 15px;
+    text-shadow: 1px 2px #111;
+    letter-spacing: 1px;
+}
+
+/* ~ ~ ~ ~ Contact Page ~ ~ ~ ~ */
+
+#contact-forms
+{
+    top: 150px;
+    width: 300px;
+    position: relative;
+    padding: 10px 15px 20px 15px;
+    background-color: rgba(255, 255, 255, 0.4);
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    color: White;
+    font-family: 'VegurLight';
+    font-size: 14px;
+    margin: 0 auto;
+    overflow: auto;
+}
+
+#contact-forms-header
+{
+    margin: 5px 0px 15px 10px;
+    font-size: 24px;
+    font-family: 'VegurBold';
+}
+
+.contact-field
+{
+    margin: 0px auto;
+    display: block;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    border: 0px solid #000;
+    width: 280px;
+    height: 30px;
+    background-color: #EEE;
+    text-indent: 10px;
+    font-family: Arial;
+    margin-top: 10px;
+}
+
+.contact-field:focus
+{
+    background: #FFF;
+    outline-color: #FFF;
+}
+
+#tbName
+{
+    margin-top: 0px;
+}
+
+#tbPhone
+{
+    background-color: #DADADA;
+}
+
+#tbPhone:focus
+{
+    background: #FFF;
+}
+
+#tbMessage
+{
+    height: 100px;
+    width: 260px;
+    max-height: 100px;
+    max-width: 260px;
+    padding: 10px;
+    text-indent: 0px;
+    resize: none;
+}
+
+#btnSend
+{
+    margin: 15px 25px 0px 170px;
+    width: 90px;
+    height: 28px;
+    border: 0px solid #000;
+    background-color: #CCC;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    font-family: Arial;
+    font-weight: bold;
+    color: #444;
+}
+
+#btnSend:hover
+{
+    background-color: #BABABA;
+    border: 1px solid #888;
+    color: #000;
+}
+
+/* ~ ~ ~ ~ Settings Page ~ ~ ~ ~ */
+
+#settings
+{
+    top: 125px;
+    width: 350px;
+    position: relative;
+    padding: 10px 15px 10px 15px;
+    background-color: rgba(255, 255, 255, 0.4);
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    color: White;
+    font-family: 'VegurLight';
+    font-size: 14px;
+    margin: 0 auto;
+}
+
+#settings-header
+{
+    margin: 5px 0px 15px 10px;
+    font-size: 24px;
+    font-family: 'VegurBold';
+}
+
+.settings-hr
+{
+    display: block;
+    height: 1px;
+    border: 0;
+    background-image: -webkit-linear-gradient(left, rgba(255,255,255,0), rgba(255,255,255,0.75), rgba(255,255,255,0));
+    background-image: -moz-linear-gradient(left, rgba(255,255,255,0), rgba(255,255,255,0.75), rgba(255,255,255,0));
+    background-image: -ms-linear-gradient(left, rgba(255,255,255,0), rgba(255,255,255,0.75), rgba(255,255,255,0));
+    background-image: -o-linear-gradient(left, rgba(255,255,255,0), rgba(255,255,255,0.75), rgba(255,255,255,0));
+}
+
+.settings-sub-header
+{
+    margin: 15px 0px 15px 25px;
+    font-size: 18px;
+    font-family: 'VegurBold';
+    color: #444;
+}
+
+.change-data-field
+{
+    margin: 0px auto;
+    display: block;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    border: 0px solid #000;
+    width: 280px;
+    height: 30px;
+    background-color: #EEE;
+    text-indent: 10px;
+    font-family: Arial;
+    margin-top: 10px;
+}
+
+.change-data-field:focus
+{
+    background: #FFF;
+    outline-color: #FFF;
+}
+
+.settingsButton
+{
+    margin: 15px 25px 15px 150px;
+    width: 150px;
+    height: 28px;
+    border: 0px solid #000;
+    background-color: #CCC;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    font-family: Arial;
+    font-weight: bold;
+    color: #444;
+}
+
+.settingsButton:hover
+{
+    background-color: #BABABA;
+    border: 1px solid #888;
+    color: #000;
+}
+
+#account-info
+{
+    top: 165px;
+    width: 350px;
+    position: relative;
+    padding: 10px 15px 10px 15px;
+    background-color: rgba(255, 255, 255, 0.4);
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    color: White;
+    font-family: 'VegurLight';
+    font-size: 14px;
+    margin: 0 auto;
+    margin-bottom: 80px;
+}
+
+#account-info-header
+{
+    margin: 5px 0px 15px 10px;
+    font-size: 24px;
+    font-family: 'VegurBold';
+}
+
+/* ~ ~ ~ ~ Friends Page ~ ~ ~ ~ */
+
+#friends
+{
+    top: 150px;
+    width: 400px;
+    position: relative;
+    padding: 10px 15px 15px 15px;
+    background-color: rgba(255, 255, 255, 0.4);
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    color: White;
+    font-family: 'VegurLight';
+    font-size: 14px;
+    margin: 0 auto;
+    overflow: auto;
+    height: 380px;
+}
+
+#friends-header
+{
+    margin: 5px 0px 15px 10px;
+    font-size: 24px;
+    font-family: 'VegurBold';
+}
+
+.friends-hr
+{
+    display: block;
+    height: 1px;
+    border: 0;
+    margin-bottom: 15px;
+    background-image: -webkit-linear-gradient(left, rgba(255,255,255,0), rgba(255,255,255,0.75), rgba(255,255,255,0));
+    background-image: -moz-linear-gradient(left, rgba(255,255,255,0), rgba(255,255,255,0.75), rgba(255,255,255,0));
+    background-image: -ms-linear-gradient(left, rgba(255,255,255,0), rgba(255,255,255,0.75), rgba(255,255,255,0));
+    background-image: -o-linear-gradient(left, rgba(255,255,255,0), rgba(255,255,255,0.75), rgba(255,255,255,0));
+}
+
+#lblFriends
+{
+    margin-left: 30px;
+    font-size: 17px;
+    font-family: 'VegurBold';
+    display: block;
+    width: 88%;
+    height: 310px;
+    overflow: auto;
+    color: #DDD;
+}
+
+.friend-link, .friend-link:visited, .friend-link:active
+{
+    color: #444;
+    text-decoration: none;
+}
+
+.friend-link:hover
+{
+    color: #444;
+    text-decoration: underline;
+}
+
+/* ~ ~ ~ ~ User Page ~ ~ ~ ~ */
+
+#lblName
+{
+    margin: 5px 0px 0px 50px;
+    vertical-align: middle;
+    height: 28px;
+    font-size: 24px;
+    font-family: 'VegurBold';
+    color: #FFF;
+    display: inline-block;
+}
+
+#btnFriendAddRemove
+{
+    margin: 95px 25px 0px 90px;
+    width: 180px;
+    height: 28px;
+    border: 0px solid #000;
+    background-color: #CCC;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    font-family: Arial;
+    font-weight: bold;
+    display: inline-block;
+    color: #444;
+}
+
+#btnFriendAddRemove:hover
+{
+    background-color: #BABABA;
+    border: 1px solid #888;
+    color: #000;
+}
+
+#user-comparison
+{
+    top: 120px;
+    width: 300px;
+    position: relative;
+    padding: 10px 15px 15px 15px;
+    background-color: rgba(255, 255, 255, 0.4);
+    b-webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    color: White;
+    font-family: 'VegurLight';
+    font-size: 15px;
+    margin: 0px auto 75px;
+    overflow: auto;
+    height: 300px;
+    line-height: 1.5em;
+}
+
+#user-comparison-header
+{
+    margin: 5px 0px 15px 10px;
+    font-size: 24px;
+    font-family: 'VegurBold';
+}
+
+.user-comparison-text-header
+{
+    font-family: Arial;
+    font-size: 17px;
+    font-weight: bold;
+    color: #444;
+    margin-left: -20px;
+}
+
+#user-comparison-text
+{
+    font-family: Arial;
+    font-size: 15px;
+    color: #EEE;
+    margin-left: 55px;
+}
+
+#classes-user-table
+{
+    border-collapse: separate;
+    margin: 0px auto;
+    top: 40px;
+    width: 725px;
+    position: relative;
+    text-align: center;
+}
+
+#classes-user-table tr:last-child td:first-child
+{
+    border-bottom-left-radius: 3px;
+}
+
+#classes-user-table tr:last-child td:last-child
+{
+    border-bottom-right-radius: 3px;
+}
+
+#teachers-user-table
+{
+    border-collapse: separate;
+    margin: 0px auto;
+    top: 80px;
+    width: 580px;
+    position: relative;
+    text-align: left;
+}
+
+#teachers-user-table tr:last-child td:first-child
+{
+    border-bottom-left-radius: 3px;
+}
+
+#teachers-user-table tr:last-child td:last-child
+{
+    border-bottom-right-radius: 3px;
+}
+
+/* ~ ~ ~ ~ Schedule Page ~ ~ ~ ~ */
+
+#classes-table
+{
+    margin: 0px auto;
+    top: 125px;
+    width: 725px;
+    position: relative;
+    text-align: center;
+}
+
+#classes-table tr:last-child td:first-child
+{
+    border-bottom-left-radius: 3px;
+}
+
+#classes-table tr:last-child td:last-child
+{
+    border-bottom-right-radius: 3px;
+}
+
+#classes-table-header
+{
+    padding: 8px;
+    color: #FFF;
+    background: rgba(255, 255, 255, 0.475);
+    font-family: 'VegurBold';
+    font-size: 30px;
+    text-align: center;
+    -webkit-border-radius: 3px 3px 0px 0px;
+    -moz-border-radius: 3px 3px 0px 0px;
+    border-radius: 3px 3px 0px 0px;
+    text-shadow: 0px 2px 1px #999;
+}
+
+.classes-cell
+{
+    padding: 10px;
+    color: #EEE;
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 14px;
+    overflow: hidden;
+    background: rgba(240, 240, 240, 0.4);
+    width: 90px;
+    height: 22px;
+    vertical-align: middle;
+}
+
+.classes-cell-highlight
+{
+    background: rgba(190, 190, 220, 0.5);
+    /*color: White;
+    text-shadow: 0px 0px 15px #000;*/
+}
+
+#classes-table tr:nth-child(odd), #classes-user-table tr:nth-child(odd)
+{
+    background: rgba(240, 240, 240, 0.2);
+}
+
+#teachers-table
+{
+    margin: 50px auto;
+    top: 115px;
+    width: 580px;
+    position: relative;
+    text-align: left;
+}
+
+#teachers-table tr:last-child td:first-child
+{
+    border-bottom-left-radius: 3px;
+}
+
+#teachers-table tr:last-child td:last-child
+{
+    border-bottom-right-radius: 3px;
+}
+
+#teachers-table-header
+{
+    padding: 7px;
+    color: #FFF;
+    background: rgba(255, 255, 255, 0.475);
+    font-family: 'VegurBold';
+    font-size: 27px;
+    text-align: center;
+    -webkit-border-radius: 3px 3px 0px 0px;
+    -moz-border-radius: 3px 3px 0px 0px;
+    border-radius: 3px 3px 0px 0px;
+    text-shadow: 0px 2px 1px #999;
+}
+
+.teachers-cell
+{
+    padding: 7px;
+    color: #EEE;
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 14px;
+    overflow: hidden;
+    background: rgba(240, 240, 240, 0.4);
+    width: 300px;
+    height: 22px;
+    vertical-align: middle;
+}
+
+.teachers-cell:hover, .classes-cell:hover
+{
+    cursor: default;
+}
+
+.teachers-cell:target, .classes-cell:target
+{
+    cursor: default;
+}
+
+.teachers-cell:hover .roster-tooltip, .classes-cell:hover .roster-tooltip
+{
+    visibility: visible;
+    opacity: 1;
+    transition-delay: .8s;
+}
+
+.teachers-cell:target .roster-tooltip, .classes-cell:target .roster-tooltip
+{
+    visibility: visible;
+    opacity: 1;
+    transition-delay: .8s;
+}
+
+.roster-tooltip
+{
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s linear 0.2s, opacity 0.2s linear;
+    z-index: 10;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    border: 0px solid #000;
+    background-color: rgba(30, 30, 30, .9);
+    padding: 10px 15px;
+    position: absolute;
+    left: 100px;
+    text-align: left;
+}
+
+.classes-cell .roster-tooltip
+{
+    top: 0px;
+    left: -200px;
+}
+
+.roster-tooltip-header
+{
+    color: White;
+    font-size: 15px;
+    font-family: VegurBold;
+    padding: 0px;
+    margin-bottom: 5px;
+    text-indent: 0px;
+}
+
+.roster-tooltip-text
+{
+    color: White;
+    font-size: 12px;
+    font-family: Arial;
+    font-weight: bold;
+    line-height: 16px;
+    padding: 0px;
+    margin-left: 5px;
+    text-indent: 0px;
+}
+
+#teachers-table tr:nth-child(odd), #teachers-user-table tr:nth-child(odd)
+{
+    background: rgba(240, 240, 240, 0.2);
+}
+
+.teachers-cell:nth-child(odd)
+{
+    text-indent: 10px;
+}
+
+#scheduleFriendsInstructions
+{
+    margin: 0px auto;
+    width: 400px;
+    top: 65px;
+    text-align: center;
+    position: relative;
+    color: #CCC;
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 10px 15px 10px 15px;
+    background-color: rgba(140, 140, 140, 0.5);
+    -webkit-border-bottom-left-radius: 3px;
+    -webkit-border-bottom-right-radius: 3px;
+    -moz-border-bottom-left-radius: 3px;
+    -moz-border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+#edit-schedule
+{
+    top: 145px;
+    width: 550px;
+    position: relative;
+    padding: 10px 15px 10px 15px;
+    background-color: rgba(255, 255, 255, 0.4);
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    color: White;
+    font-family: 'VegurLight';
+    font-size: 14px;
+    margin: 0px auto 75px;
+    overflow: auto;
+}
+
+#edit-schedule-header
+{
+    margin: 5px 0px 15px 10px;
+    font-size: 24px;
+    font-family: 'VegurBold';
+}
+
+.edit-schedule-hr
+{
+    display: block;
+    height: 1px;
+    border: 0;
+    background-image: -webkit-linear-gradient(left, rgba(255,255,255,0), rgba(255,255,255,0.75), rgba(255,255,255,0));
+    background-image: -moz-linear-gradient(left, rgba(255,255,255,0), rgba(255,255,255,0.75), rgba(255,255,255,0));
+    background-image: -ms-linear-gradient(left, rgba(255,255,255,0), rgba(255,255,255,0.75), rgba(255,255,255,0));
+    background-image: -o-linear-gradient(left, rgba(255,255,255,0), rgba(255,255,255,0.75), rgba(255,255,255,0));
+}
+
+.edit-schedule-sub-header
+{
+    margin: 15px 0px 15px 40px;
+    font-size: 20px;
+    font-family: 'VegurBold';
+    color: #444;
+}
+
+#txtScheduleInput
+{
+    width: 460px;
+    height: 55px;
+    resize: none;
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 3px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    border: 0px solid #000;
+    background-color: #EEE;
+    text-indent: 10px;
+    display: block;
+    margin-left: 40px;
+    padding-top: 8px;
+}
+
+#txtScheduleInput:focus
+{
+    background: #FFF;
+    outline-color: #FFF;
+}
+
+#btnApplySchedule
+{
+    margin: 15px 0px 25px 205px;
+    width: 140px;
+    height: 28px;
+    border: 0px solid #000;
+    background-color: #CCC;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    font-family: Arial;
+    font-weight: bold;
+    color: #444;
+}
+
+#btnApplySchedule:hover
+{
+    background-color: #BABABA;
+    border: 1px solid #888;
+    color: #000;
+}
+
+#btnHowTo
+{
+    margin: 15px 15px 15px 80px;
+    width: 80px;
+    height: 28px;
+    border: 0px solid #000;
+    background-color: #CCC;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    font-family: Arial;
+    font-weight: bold;
+    color: #444;
+}
+
+#btnHowTo:hover
+{
+    background-color: #BABABA;
+    border: 1px solid #888;
+    color: #000;
+}
+
+#pnlTeacherDropdowns
+{
+    margin: 0px 50px;
+    padding: 15px 35px;
+}
+
+.pnlClassNameWithDropdown
+{
+    display: block;
+    position: relative;
+    width: 400px;
+    height: 40px;
+}
+
+.teachers-class-name
+{
+    font-weight: bold;
+    font-family: Arial;
+    position: relative;
+    left: 0;
+    display: inline-block;
+    font-size: 15px;
+    padding: 5px 5px 5px 5px;
+}
+
+.teachers-drop-down
+{
+    margin-right: 20px;
+    float: right;
+    background: #DDD;
+    padding: 2px;
+    font-size: 12px;
+    font-weight: bold;
+    font-family: Arial;
+    border: 0px solid #000;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    width: 240px;
+    height: 28px;
+    overflow: hidden;
+    color: #222;
+}
+
+.teachers-drop-down:focus
+{
+    outline-color: transparent;
+}
+
+#btnApplyTeachers
+{
+    margin: 15px 0px 25px 205px;
+    width: 140px;
+    height: 28px;
+    border: 0px solid #000;
+    background-color: #CCC;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    font-family: Arial;
+    font-weight: bold;
+    color: #444;
+}
+
+#btnApplyTeachers:hover
+{
+    background-color: #BABABA;
+    border: 1px solid #888;
+    color: #000;
+}
+
+#btnSaveChanges
+{
+    margin: 15px 0px 25px 205px;
+    width: 140px;
+    height: 28px;
+    border: 0px solid #000;
+    background-color: #CCC;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    font-family: Arial;
+    font-weight: bold;
+    color: #444;
+}
+
+#btnSaveChanges:hover
+{
+    background-color: #BABABA;
+    border: 1px solid #888;
+    color: #000;
+}
+
+.friend-in-class-name-item
+{
+    text-decoration: none;
+    color: inherit;   
+}
+
+/* ~ ~ ~ ~ Signup Page ~ ~ ~ ~ */
+
+#signup-div
+{
+    top: 150px;
+    width: 300px;
+    position: relative;
+    padding: 10px 15px 15px 15px;
+    background-color: rgba(255, 255, 255, 0.4);
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    color: White;
+    font-family: 'VegurLight';
+    font-size: 14px;
+    margin: 0 auto;
+}
+
+#signup-header
+{
+    margin: 5px 0px 15px 10px;
+    font-size: 24px;
+    font-family: 'VegurBold';
+}
+
+.signup-hr
+{
+    display: block;
+    height: 1px;
+    border: 0;
+    margin-bottom: 15px;
+    background-image: -webkit-linear-gradient(left, rgba(255,255,255,0), rgba(255,255,255,0.75), rgba(255,255,255,0));
+    background-image: -moz-linear-gradient(left, rgba(255,255,255,0), rgba(255,255,255,0.75), rgba(255,255,255,0));
+    background-image: -ms-linear-gradient(left, rgba(255,255,255,0), rgba(255,255,255,0.75), rgba(255,255,255,0));
+    background-image: -o-linear-gradient(left, rgba(255,255,255,0), rgba(255,255,255,0.75), rgba(255,255,255,0));
+}
+
+#signup-table
+{
+    margin: 0px auto;
+}
+
+#signup-table td
+{
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+
+.signup-login-field
+{
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    border: 0px solid #000;
+    width: 250px;
+    height: 32px;
+    background: #EEE;
+    text-indent: 10px;
+    font-family: Arial;
+}
+
+#tbSignupFName, #tbSignupLName
+{
+    background: #DADADA;
+}
+
+.signup-login-field:focus, #tbSignupFName:focus, #tbSignupLName:focus
+{
+    background: #FFF;
+    outline-color: #FFF;
+}
+
+#terms-text
+{
+    display: inline-block;
+    font-family: Arial;
+    color: #FFF;
+    width: 200px;
+    margin-left: 5px;
+    font-size: 12px;
+}
+
+#terms-link
+{
+    color: #555;
+    text-decoration: none;
+}
+
+#terms-link:hover
+{
+    color: #111;
+}
+
+#chkAgree
+{
+    margin: 10px 0px 10px 30px;
+    vertical-align: middle;
+}
+
+#btnSignup
+{
+    margin: 10px 35px 10px 0px;
+    width: 140px;
+    height: 28px;
+    border: 0px solid #000;
+    background-color: #CCC;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    font-family: Arial;
+    font-weight: bold;
+    display: block;
+    float: right;
+}
+
+#btnSignup:hover
+{
+    background-color: #BABABA;
+    border: 1px solid #888;
+    color: #000;
+}
+
+#lblPasswordConfirm
+{
+    display: block;
+    margin: 60px 0px -10px 10px;
+    color: #000;
+    font-size: 12px;
+    font-family: Arial;
+    font-weight: bold;
+}
+
+/* ~ ~ ~ ~ How To Page ~ ~ ~ ~ */
+
+#how-to
+{
+    top: 125px;
+    width: 600px;
+    position: relative;
+    padding: 10px 15px 20px 15px;
+    background-color: rgba(255, 255, 255, 0.4);
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    color: White;
+    font-family: 'VegurLight';
+    font-size: 14px;
+    margin: 0px auto 65px;
+    overflow: auto;
+}
+
+#how-to-header
+{
+    margin: 5px 0px 15px 10px;
+    font-size: 24px;
+    font-family: 'VegurBold';
+}
+
+#how-to-instructions
+{
+}
+
+.how-to-item
+{
+    font-size: 18px;
+    font-family: 'VegurBold';
+    color: #444;
+    margin-bottom: 40px;
+}
+
+.how-to-image
+{
+    margin: 0px auto;
+    background-repeat: no-repeat;
+    margin-top: 10px;
+}
+
+#how-to-image-1
+{
+    background-image: url("../images/how_to_1.png");
+    width: 500px;
+    height: 150px;
+    background-size: 500px 150px;
+}
+
+#how-to-image-2
+{
+    background-image: url("../images/how_to_2.png");
+    width: 500px;
+    height: 350px;
+    background-size: 500px 350px;
+}
+
+#how-to-image-3
+{
+    background-image: url("../images/how_to_3.png");
+    width: 500px;
+    height: 350px;
+    background-size: 500px 350px;
+}
+
+#btnGotIt
+{
+    width: 140px;
+    height: 28px;
+    border: 0px solid #000;
+    background-color: #CCC;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    font-family: Arial;
+    font-weight: bold;
+    display: block;
+    margin: 30px auto 0px auto;
+}
+
+#btnGotIt:hover
+{
+    background-color: #BABABA;
+    border: 1px solid #888;
+    color: #000;
+}
